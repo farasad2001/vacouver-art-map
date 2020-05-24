@@ -69,14 +69,14 @@ export default class Map extends React.Component {
   filterData() {
     const filter = this.props.filter;
 
-    if (filter == undefined || filter == null) {
+    if (filter === undefined || filter === null) {
       this.setState({ data: this.originalData });
     } else {
       const filteredFeatures = this.originalData.features.filter(feature => {
-        const byType = filter.types == undefined || filter.types == null || filter.types.length === 0 ||
+        const byType = filter.types === undefined || filter.types === null || filter.types.length === 0 ||
           filter.types.includes(feature.properties.type);
 
-        const byStatus = filter.status == undefined || filter.status == null || filter.status.length === 0 ||
+        const byStatus = filter.status === undefined || filter.status === null || filter.status.length === 0 ||
           filter.status.includes(feature.properties.status);
 
         return byType && byStatus;

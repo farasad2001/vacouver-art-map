@@ -1,7 +1,7 @@
-import { Button, Checkbox, Divider, Select } from 'antd';
+import { Checkbox, Divider, Select } from 'antd';
 import React from 'react';
-import './filter.scss';
 import './feature-info.scss';
+import './filter.scss';
 
 const CheckboxGroup = Checkbox.Group;
 const Option = Select.Option;
@@ -75,8 +75,8 @@ export default class Filter extends React.Component {
           />
         </div>
         <Divider orientation="left"></Divider>
-        <a className="button" onClick={this.doFilter}>Filter</a>
-        <a className="button" onClick={this.showAll}>Reset</a>
+        <button className="button" onClick={this.doFilter}>Filter</button>
+        <button className="button" onClick={this.showAll}>Reset</button>
       </div>
     )
   }

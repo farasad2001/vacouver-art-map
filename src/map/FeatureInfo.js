@@ -14,8 +14,8 @@ export default class FeatureInfo extends React.Component {
       <div className="feature-info">
         <h2>{this.props.type}</h2>
         <div className="content">{this.props.descriptionofwork}</div>
-        {photoUrl && <img src={photoUrl}></img>}
-        <a href={this.props.url} target="_blank" className="button">More Info</a>
+        {photoUrl && <img src={photoUrl} alt="Artwork"></img>}
+        <a href={this.props.url} target="_blank" rel="noopener noreferrer" className="button">More Info</a>
       </div>
     )
   }

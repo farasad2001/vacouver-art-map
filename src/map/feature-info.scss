@@ -33,6 +33,7 @@ $color: #04bacf;
         transition: all .3s;
         position: relative;
         overflow: hidden;
+        border-width: 0px;
         z-index: 1;
         &:after {
             content: '';
